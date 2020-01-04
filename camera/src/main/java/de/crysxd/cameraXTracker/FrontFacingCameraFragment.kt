@@ -4,8 +4,7 @@ import androidx.camera.core.CameraX
 import androidx.camera.core.ImageAnalysisConfig
 import androidx.camera.core.PreviewConfig
 
-@Suppress("unused")
-open class FrontFacingCameraFragment : CameraFragment() {
+class FrontFacingCameraFragment : CameraFragment() {
 
     override fun onCreateAnalyzerConfigBuilder(): ImageAnalysisConfig.Builder = super.onCreateAnalyzerConfigBuilder().apply {
         setLensFacing(CameraX.LensFacing.FRONT)
